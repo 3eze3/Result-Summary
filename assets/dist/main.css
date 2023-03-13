@@ -134,5 +134,30 @@ body {
   display: grid;
   place-content: center;
 }
+.main__card {
+  max-width: 45rem;
+  min-height: 30rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  box-shadow: -0.5rem -0.5rem 2rem hsla(241deg, 100%, 89%, 0.439), 0.5rem 0.5rem 2rem hsla(222deg, 100%, 96%, 0.532);
+}
+
+.card__title {
+  font-size: 1.8em;
+}
+.card__title--hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
 
 /*# sourceMappingURL=main.css.map */

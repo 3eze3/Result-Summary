@@ -1,0 +1,34 @@
+@use "../abstract/varibles" as bgColors;
+.main {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  &__card {
+    max-width: 45rem;
+    min-height: 30rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    box-shadow: -0.5rem -0.5rem 2rem bgColors.$light-lavender,
+      0.5rem 0.5rem 2rem bgColors.$pale-blue;
+  }
+}
+.card {
+  &__title {
+    font-size: 1.8em;
+    &--hidden {
+      position: absolute;
+      top: 0;
+      left: 0;
+      visibility: hidden;
+    }
+  }
+}

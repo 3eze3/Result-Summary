@@ -1,5 +1,13 @@
-@use "abstract/varibles";
+/* Variables, Mixins */
+@import "abstract/varibles";
+@import "abstract/mixin";
+/* Reset */
 @use "base/base";
+/* Layout */
 @use "layout/card";
 @use "layout/cards";
+/* Components */
+@use "components/circle";
+@use "components/categories";
+@use "components/button";
 // @use "components/"

@@ -1,17 +1,17 @@
-@use "../abstract/varibles" as bgColors;
+@use "../abstract/varibles" as colors_font;
+@use "../abstract/mixin" as mixin;
 .card {
   &__wrapper {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 2rem;
-    gap: 3rem;
-
+    min-height: 100%;
+    @include mixin.flex();
+    padding-top: 2.8rem;
+    gap: 2rem;
     &--result {
       flex: 50%;
-      background-color: red;
+      background-image: linear-gradient(
+        colors_font.$light-slate-blue,
+        colors_font.$light-royal-blue
+      );
       border-radius: 2.5rem;
       -webkit-border-radius: 2.5rem;
       -moz-border-radius: 2.5rem;
@@ -23,6 +23,28 @@
       align-items: flex-start;
     }
   }
-  &__ {
+  &__title {
+    &--resultHeading {
+      color: colors_font.$pale-blue;
+    }
+    &--resultSummary {
+      font-weight: colors_font.$font-700;
+      color: colors_font.$dark-gray-blue;
+    }
+  }
+  &__content {
+    width: 73%;
+    text-align: center;
+  }
+  &__subtitle {
+    color: colors_font.$white;
+    font-size: 2.15em;
+    font-weight: colors_font.$font-700;
+    letter-spacing: 0.02em;
+    margin-bottom: 1rem;
+  }
+  &__descriptionResult {
+    color: colors_font.$light-lavender;
+    line-height: 1.33;
   }
 }

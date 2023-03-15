@@ -6,12 +6,11 @@
   display: grid;
   place-content: center;
   &__card {
-    min-width: 50rem;
+    width: 53rem;
     min-height: 37rem;
     position: relative;
     @include mixin.flex(flex-start, space-between, row);
     gap: 3rem;
-    overflow: hidden;
     border-radius: 2.5rem;
     -webkit-border-radius: 2.5rem;
     -moz-border-radius: 2.5rem;

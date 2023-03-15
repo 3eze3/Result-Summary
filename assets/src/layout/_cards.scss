@@ -2,6 +2,7 @@
 @use "../abstract/mixin" as mixin;
 .card {
   &__wrapper {
+    max-width: 50%;
     min-height: 100%;
     @include mixin.flex();
     padding-top: 2.8rem;
@@ -33,7 +34,7 @@
     }
   }
   &__content {
-    width: 73%;
+    width: 70%;
     text-align: center;
   }
   &__subtitle {

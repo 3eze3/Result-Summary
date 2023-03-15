@@ -1,13 +1,13 @@
-/* Variables, Mixins */
-@import "abstract/varibles";
-@import "abstract/mixin";
+@charset 'utf-8';
+
 /* Reset */
 @use "base/base";
+
 /* Layout */
 @use "layout/card";
 @use "layout/cards";
+
 /* Components */
 @use "components/circle";
 @use "components/categories";
 @use "components/button";
-// @use "components/"

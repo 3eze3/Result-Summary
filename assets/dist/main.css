@@ -139,8 +139,9 @@ body {
   min-height: 35rem;
   position: relative;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: flex-start;
+  justify-content: space-between;
   gap: 3rem;
   overflow: hidden;
   border-radius: 2.5rem;
@@ -148,7 +149,7 @@ body {
   -moz-border-radius: 2.5rem;
   -ms-border-radius: 2.5rem;
   -o-border-radius: 2.5rem;
-  box-shadow: -0.5rem -0.5rem 2rem hsla(241deg, 100%, 89%, 0.439), 0.5rem 0.5rem 2rem hsla(222deg, 100%, 96%, 0.532);
+  box-shadow: -0.5rem -0.5rem 2rem hsla(241deg, 100%, 89%, 0.85), 0.5rem 0.5rem 2rem hsla(222deg, 100%, 96%, 0.68);
 }
 
 .card__title {
@@ -162,17 +163,17 @@ body {
 }
 
 .card__wrapper {
-  height: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding-top: 2rem;
-  gap: 3rem;
+  padding-top: 2.8rem;
+  gap: 2rem;
 }
 .card__wrapper--result {
   flex: 50%;
-  background-color: red;
+  background-image: linear-gradient(hsl(252deg, 100%, 67%), hsl(241deg, 81%, 54%));
   border-radius: 2.5rem;
   -webkit-border-radius: 2.5rem;
   -moz-border-radius: 2.5rem;
@@ -183,5 +184,31 @@ body {
   flex: 45%;
   align-items: flex-start;
 }
+.card__title--resultHeading {
+  color: hsla(222deg, 100%, 96%, 0.68);
+}
+.card__title--resultSummary {
+  font-weight: 800;
+  color: hsl(224deg, 30%, 27%);
+}
+.card__content {
+  width: 73%;
+  text-align: center;
+}
+.card__subtitle {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2.15em;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  margin-bottom: 1rem;
+}
+.card__descriptionResult {
+  color: hsla(241deg, 100%, 89%, 0.85);
+  line-height: 1.33;
+}
+
+/* Reset */
+/* Layout */
+/* Components */
 
 /*# sourceMappingURL=main.css.map */

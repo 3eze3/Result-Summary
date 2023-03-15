@@ -1,4 +1,5 @@
-@use "../abstract/varibles" as bgColors;
+@use "../abstract/varibles" as colors;
+@use "../abstract/mixin" as mixin;
 .main {
   width: 100%;
   height: 100vh;
@@ -8,9 +9,7 @@
     min-width: 50rem;
     min-height: 35rem;
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    @include mixin.flex(flex-start, space-between, row);
     gap: 3rem;
     overflow: hidden;
     border-radius: 2.5rem;
@@ -18,8 +17,8 @@
     -moz-border-radius: 2.5rem;
     -ms-border-radius: 2.5rem;
     -o-border-radius: 2.5rem;
-    box-shadow: -0.5rem -0.5rem 2rem bgColors.$light-lavender,
-      0.5rem 0.5rem 2rem bgColors.$pale-blue;
+    box-shadow: -0.5rem -0.5rem 2rem colors.$light-lavender,
+      0.5rem 0.5rem 2rem colors.$pale-blue;
   }
 }
 .card {

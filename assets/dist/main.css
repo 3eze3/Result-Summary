@@ -135,15 +135,14 @@ body {
   place-content: center;
 }
 .main__card {
-  min-width: 50rem;
-  min-height: 35rem;
+  width: 53rem;
+  min-height: 37rem;
   position: relative;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
   gap: 3rem;
-  overflow: hidden;
   border-radius: 2.5rem;
   -webkit-border-radius: 2.5rem;
   -moz-border-radius: 2.5rem;
@@ -163,6 +162,7 @@ body {
 }
 
 .card__wrapper {
+  max-width: 50%;
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -192,7 +192,7 @@ body {
   color: hsl(224deg, 30%, 27%);
 }
 .card__content {
-  width: 73%;
+  width: 70%;
   text-align: center;
 }
 .card__subtitle {
@@ -205,6 +205,15 @@ body {
 .card__descriptionResult {
   color: hsla(241deg, 100%, 89%, 0.85);
   line-height: 1.33;
+}
+
+.card__circle {
+  outline: solid red 1px;
+  width: 15rem;
+  height: 15rem;
+}
+.card__score {
+  outline: solid red 1px;
 }
 
 /* Reset */

@@ -7,7 +7,7 @@
   place-content: center;
   &__card {
     min-width: 50rem;
-    min-height: 35rem;
+    min-height: 37rem;
     position: relative;
     @include mixin.flex(flex-start, space-between, row);
     gap: 3rem;

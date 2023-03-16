@@ -7,7 +7,7 @@
   place-content: center;
   &__card {
     width: 53rem;
-    min-height: 37rem;
+    height: 37rem;
     position: relative;
     @include layoutFlex.flex(flex-start, space-between, row);
     gap: 3rem;

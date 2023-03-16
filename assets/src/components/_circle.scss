@@ -1,0 +1,32 @@
+@use "../abstract/varibles" as colors_font;
+@use "../abstract/mixin" as layoutFlex;
+.card {
+  &__circle {
+    width: 14rem;
+    height: 14rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-image: linear-gradient(
+      180deg,
+      colors_font.$violet-blue,
+      colors_font.$persian-blue
+    );
+  }
+  &__score {
+    @include layoutFlex.flex($justify: center);
+  }
+  &__scoredReached {
+    font-size: 5.3vw;
+    font-weight: colors_font.$font-700;
+    color: colors_font.$white;
+  }
+  &__maxScore {
+    color: colors_font.$light-lavender;
+    font-size: 1.25em;
+  }
+}

@@ -1,0 +1,14 @@
+@use "../abstract/varibles" as colors_font;
+.card__btn {
+  width: 100%;
+  padding-block: 1.2rem;
+  color: colors_font.$white;
+  font-size: 1.23em;
+  font-weight: colors_font.$font-500;
+  background-color: colors_font.$dark-gray-blue;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}

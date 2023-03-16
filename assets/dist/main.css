@@ -183,6 +183,7 @@ body {
 .card__wrapper--summary {
   flex: 45%;
   align-items: flex-start;
+  padding-right: 3.9rem;
 }
 .card__title--resultHeading {
   color: hsla(222deg, 100%, 96%, 0.68);
@@ -233,6 +234,20 @@ body {
 .card__maxScore {
   color: hsla(241deg, 100%, 89%, 0.85);
   font-size: 1.25em;
+}
+
+.card__btn {
+  width: 100%;
+  padding-block: 1.2rem;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.23em;
+  font-weight: 500;
+  background-color: hsl(224deg, 30%, 27%);
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
 }
 
 /* Reset */

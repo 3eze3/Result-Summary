@@ -1,12 +1,12 @@
 @use "../abstract/varibles" as colors_font;
-@use "../abstract/mixin" as mixin;
+@use "../abstract/mixin" as layoutFlex;
 .card {
   &__wrapper {
     max-width: 50%;
     min-height: 100%;
-    @include mixin.flex();
+    @include layoutFlex.flex();
     padding-top: 2.8rem;
-    gap: 2rem;
+    gap: 2.5rem;
     &--result {
       flex: 50%;
       background-image: linear-gradient(

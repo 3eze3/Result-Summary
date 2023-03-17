@@ -9,7 +9,8 @@
     gap: 2.5rem;
     &--result {
       flex: 50%;
-      background-image: linear-gradient(
+
+      @include layoutFlex.bg-linear(
         colors_font.$light-slate-blue,
         colors_font.$light-royal-blue
       );
@@ -22,7 +23,7 @@
     &--summary {
       flex: 45%;
       align-items: flex-start;
-      padding-right: 3.9rem;
+      padding-right: 3rem;
     }
   }
   &__title {

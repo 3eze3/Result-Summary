@@ -4,3 +4,17 @@
   align-items: $aling;
   justify-content: $justify;
 }
+@mixin bgColor($color) {
+  $light-color: mix($color, #fff, 6%);
+  color: $color;
+  background-color: $light-color;
+}
+@mixin contentImage($url) {
+  &::before {
+    content: url("../images/icon-#{$url}.svg");
+    display: inline-block;
+  }
+}
+@mixin bg-linear($primary, $second) {
+  background-image: linear-gradient($primary, $second);
+}

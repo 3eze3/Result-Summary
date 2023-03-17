@@ -1,4 +1,5 @@
 @use "../abstract/varibles" as colors_font;
+@use "../abstract/mixin" as bgLinear;
 .card__btn {
   width: 100%;
   padding-block: 1.2rem;
@@ -11,4 +12,11 @@
   -moz-border-radius: 2rem;
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
+  &:hover {
+    @include bgLinear.bg-linear(
+      colors_font.$light-slate-blue,
+      colors_font.$light-royal-blue
+    );
+    cursor: pointer;
+  }
 }

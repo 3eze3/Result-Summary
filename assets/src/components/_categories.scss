@@ -1,0 +1,65 @@
+@use "../abstract/varibles" as colors_font;
+@use "../abstract/mixin" as bg_logo;
+.card {
+  &__scoredList {
+    width: 100%;
+  }
+  &__categorie {
+    height: 4rem;
+    margin-bottom: 1rem;
+    padding: 1.25rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    &--reaction {
+      @include bg_logo.bgColor(colors_font.$light-red);
+    }
+    &--memory {
+      @include bg_logo.bgColor(colors_font.$orangey-yellow);
+    }
+    &--verbal {
+      @include bg_logo.bgColor(colors_font.$green-teal);
+    }
+    &--visual {
+      @include bg_logo.bgColor(colors_font.$cobalt-blue);
+    }
+  }
+  &__categorieContent {
+    line-height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__categorieName {
+    font-size: 1.33em;
+    font-weight: colors_font.$font-500;
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.5rem;
+    &--reaction {
+      @include bg_logo.contentImage(reaction);
+    }
+    &--memory {
+      @include bg_logo.contentImage(memory);
+    }
+    &--verbal {
+      @include bg_logo.contentImage(verbal);
+    }
+    &--visual {
+      @include bg_logo.contentImage(visual);
+    }
+  }
+  &__categoriePoints {
+    font-size: 1.22em;
+    font-weight: colors_font.$font-700;
+    color: #000;
+    &::after {
+      content: " / 100";
+      display: inline;
+      color: colors_font.$light-lavender;
+    }
+  }
+}

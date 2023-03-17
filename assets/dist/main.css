@@ -136,7 +136,7 @@ body {
 }
 .main__card {
   width: 53rem;
-  min-height: 37rem;
+  height: 37rem;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -183,7 +183,7 @@ body {
 .card__wrapper--summary {
   flex: 45%;
   align-items: flex-start;
-  padding-right: 3.9rem;
+  padding-right: 3rem;
 }
 .card__title--resultHeading {
   color: hsla(222deg, 100%, 96%, 0.68);
@@ -236,6 +236,76 @@ body {
   font-size: 1.25em;
 }
 
+.card__scoredList {
+  width: 100%;
+}
+.card__categorie {
+  height: 4rem;
+  margin-bottom: 1rem;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+.card__categorie--reaction {
+  color: hsl(0deg, 55%, 50%);
+  background-color: #fcf3f3;
+}
+.card__categorie--memory {
+  color: hsl(39deg, 100%, 56%);
+  background-color: #fffaf2;
+}
+.card__categorie--verbal {
+  color: hsl(166deg, 100%, 37%);
+  background-color: #f0fbf8;
+}
+.card__categorie--visual {
+  color: hsl(234deg, 85%, 45%);
+  background-color: #f1f2fc;
+}
+.card__categorieContent {
+  line-height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card__categorieName {
+  font-size: 1.33em;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.card__categorieName--reaction::before {
+  content: url("../images/icon-reaction.svg");
+  display: inline-block;
+}
+.card__categorieName--memory::before {
+  content: url("../images/icon-memory.svg");
+  display: inline-block;
+}
+.card__categorieName--verbal::before {
+  content: url("../images/icon-verbal.svg");
+  display: inline-block;
+}
+.card__categorieName--visual::before {
+  content: url("../images/icon-visual.svg");
+  display: inline-block;
+}
+.card__categoriePoints {
+  font-size: 1.22em;
+  font-weight: 800;
+  color: #000;
+}
+.card__categoriePoints::after {
+  content: " / 100";
+  display: inline;
+  color: hsla(241deg, 100%, 89%, 0.85);
+}
+
 .card__btn {
   width: 100%;
   padding-block: 1.2rem;
@@ -248,6 +318,10 @@ body {
   -moz-border-radius: 2rem;
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
+}
+.card__btn:hover {
+  background-image: linear-gradient(hsl(252deg, 100%, 67%), hsl(241deg, 81%, 54%));
+  cursor: pointer;
 }
 
 /* Reset */

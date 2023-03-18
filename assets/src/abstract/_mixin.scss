@@ -18,3 +18,21 @@
 @mixin bg-linear($primary, $second) {
   background-image: linear-gradient($primary, $second);
 }
+@mixin border-radius(
+  $top-left: 2.5rem,
+  $top-rigth: 2.5rem,
+  $bottom-rigth: 2.5rem,
+  $bottom-left: 2.5rem
+) {
+  border-radius: $top-left $top-rigth $bottom-rigth $bottom-left;
+  -webkit-border-radius: $top-left $top-rigth $bottom-rigth $bottom-left;
+  -moz-border-radius: $top-left $top-rigth $bottom-rigth $bottom-left;
+  -ms-border-radius: $top-left $top-rigth $bottom-rigth $bottom-left;
+  -o-border-radius: $top-left $top-rigth $bottom-rigth $bottom-left;
+}
+// Media Query
+@mixin media-breakpoint($breakpoint, $direction: min-width) {
+  @media screen and ($direction: $breakpoint) {
+    @content;
+  }
+}

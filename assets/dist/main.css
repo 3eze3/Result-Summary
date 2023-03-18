@@ -171,9 +171,11 @@ body {
 }
 .card__title--hidden {
   position: absolute;
-  top: 0;
-  left: 0;
-  visibility: hidden;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 .card__wrapper {

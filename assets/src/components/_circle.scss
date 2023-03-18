@@ -21,7 +21,7 @@
     @include layoutFlex.flex($justify: center);
   }
   &__scoredReached {
-    font-size: 5.3vw;
+    font-size: 5.3em;
     font-weight: colors_font.$font-700;
     color: colors_font.$white;
   }

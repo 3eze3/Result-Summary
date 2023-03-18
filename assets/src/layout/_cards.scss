@@ -2,28 +2,35 @@
 @use "../abstract/mixin" as layoutFlex;
 .card {
   &__wrapper {
-    max-width: 50%;
+    width: 100%;
     min-height: 100%;
     @include layoutFlex.flex();
-    padding-top: 2.8rem;
+    padding-block: 2.8rem;
     gap: 2.5rem;
     &--result {
       flex: 50%;
-
       @include layoutFlex.bg-linear(
         colors_font.$light-slate-blue,
         colors_font.$light-royal-blue
       );
-      border-radius: 2.5rem;
-      -webkit-border-radius: 2.5rem;
-      -moz-border-radius: 2.5rem;
-      -ms-border-radius: 2.5rem;
-      -o-border-radius: 2.5rem;
+      @include layoutFlex.border-radius();
+      @include layoutFlex.media-breakpoint(
+        colors_font.$desing-mobile,
+        max-width
+      ) {
+        @include layoutFlex.border-radius(0, 0);
+      }
     }
     &--summary {
       flex: 45%;
       align-items: flex-start;
       padding-right: 3rem;
+      @include layoutFlex.media-breakpoint(
+        colors_font.$desing-mobile,
+        max-width
+      ) {
+        padding: 2rem;
+      }
     }
   }
   &__title {
